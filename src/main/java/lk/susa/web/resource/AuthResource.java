@@ -23,8 +23,7 @@ public class AuthResource {
     @Inject
     private IdentityStoreHandler identityStoreHandler;
 
-    public record LoginRequest(String username, String password) {
-    } // JDK 16 above
+    public record LoginRequest(String username, String password) {} // JDK 16 above
 
     @Path("/login")
     @POST
